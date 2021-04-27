@@ -26,7 +26,6 @@ export default function LoginPage() {
 
   return (
     <Container>
-      
       <Row>
         <Col>
           <h1>User</h1>
