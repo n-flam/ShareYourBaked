@@ -26,9 +26,10 @@ export default function LoginPage() {
 
   return (
     <Container>
+      
       <Row>
         <Col>
-          <h1>Home Page</h1>
+          <h1>User</h1>
         </Col>
       </Row>
       <Row>
