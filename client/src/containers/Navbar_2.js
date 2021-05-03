@@ -12,6 +12,10 @@ const useStyles = makeStyles({
   root: {
     flexGrow: 1,
   },
+
+  tab: {
+    
+  }
 });
 
 export default function CenteredTabs() {
@@ -28,12 +32,16 @@ export default function CenteredTabs() {
   };
   const [links, setLinks] = useState([
     {
+      title: "Landing",
+      href: '/',
+    },
+    {
       title: "Login",
       href: '/login',
     },
     
     {title: "Signup", href: "/signup"},
-    {title: "Home", href: "/home"},
+    {title: "User", href: "/user"},
     {title: "Contact", href: "/contact"},
     {title: "About", href: "/about"},
     {title: "Logout", href: "/logout"},

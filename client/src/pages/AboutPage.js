@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Navbar from "./Navbar";
+import Navbar from "../containers/Navbar";
 
 export default function AboutPage() {
   const [error, setError] = useState("");

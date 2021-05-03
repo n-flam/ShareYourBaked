@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 
 // import Button from "react-bootstrap/Button";
 import imageOverlay from "../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg";
-import Navbar from "./Navbar";
+import Navbar from "../containers/Navbar";
 // import './ContactUs.css';
 
 // export default function ContactUs() {

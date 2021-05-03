@@ -7,14 +7,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Navbar from "./Navbar";
+import Navbar from "../containers/Navbar";
 
 
 
 
 
 
-import Input from "../components/input";
+import Input from "../containers/SignupInput";
 // import { Navbar } from "react-bootstrap";
 
 export default function SignupPage() {

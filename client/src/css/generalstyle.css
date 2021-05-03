@@ -53,3 +53,17 @@ body {
     padding: 20px 20px 40px 20px;
 
   }
+
+  .currentuser {
+    background-color: cadetblue;
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .navbar {
+    background-color: cornsilk;
+  }
+
+  .navbar :active {
+    -ms-text-underline-position: under #778;
+  }

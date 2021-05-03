@@ -1,21 +1,29 @@
 import React from "react";
+
+// import components
 import Media from "react-bootstrap/Media";
+import Avatar from "../components/Avatar";
+// import Card from 'react-bootstrap/Card';
 
 
-
-export default function CurrentUser() {
+export default function OfferList() {
 
 
     return (
+
+
+        
         <ul className="list-unstyled">
   <Media as="li">
-    <img
+
+      <Avatar></Avatar>
+    {/* <img
       width={64}
       height={64}
       className="mr-3"
       src="holder.js/64x64"
       alt="Generic placeholder"
-    />
+    /> */}
     <Media.Body>
       <h5>List-based media object</h5>
       <p>

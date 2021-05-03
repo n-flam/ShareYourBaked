@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 //import components
-import Navbar from "./Navbar";
+import Navbar from "../containers/Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

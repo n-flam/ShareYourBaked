@@ -19,11 +19,11 @@ import './css/generalstyle.css';
 import {Coalesce} from 'ambient-cbg';
 
 //import pages
-import Navbar from './pages/Navbar.js';
+import Navbar from './containers/Navbar.js';
 import ProtectedRoute from "./routes/ProtectedRoute";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/UserPage";
 import Contact from "./pages/ContactPage";
 import About from "./pages/AboutPage";
 
