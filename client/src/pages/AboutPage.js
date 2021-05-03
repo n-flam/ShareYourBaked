@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-export default function LoginPage() {
+export default function AboutPage() {
   const [error, setError] = useState("");
 
   function handleLogout() {
@@ -25,7 +25,7 @@ export default function LoginPage() {
   }
 
   return (
-    <Container>
+    <Container className="about">
       <Row>
         <Col>
           <h1>About</h1>

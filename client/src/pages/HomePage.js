@@ -1,11 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
+
 export default function LoginPage() {
   const [error, setError] = useState("");
+  const [bakedgoods, setBakedgoods] = useState([]);
+
+  useEffect(() => {
+    fetch("/api/bakedgoods", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((resp) => {
+        if (resp.status !== 200) {
+          throw resp.statusText;
+        }
+        return resp.json();
+      })
+      .then((data) => {
+        setBakedgoods(data);
+        console.log(data);
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  }, []);
 
   function handleLogout() {
     fetch("/api/logout", {

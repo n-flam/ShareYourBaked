@@ -6,6 +6,9 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import Navbar from "./Navbar";
+
+
 export default function LoginPage() {
   const [error, setError] = useState("");
   const emailRef = useRef();
@@ -42,6 +45,8 @@ export default function LoginPage() {
 
   return (
     <Container>
+      <Navbar></Navbar>
+          <Container>
       <Row>
         <Col>
           <h1>Login</h1>
@@ -71,7 +76,7 @@ export default function LoginPage() {
               />
               {error && <Form.Text className="text-muted">{error}</Form.Text>}
             </Form.Group>
-            <Button variant="primary" type="submit" onClick={handleSubmit}>
+            <Button variant="outline-warning" type="submit" onClick={handleSubmit}>
               Submit
             </Button>
           </Form>
@@ -83,5 +88,7 @@ export default function LoginPage() {
         </Col>
       </Row>
     </Container>
+    </Container>
+
   );
 }

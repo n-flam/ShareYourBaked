@@ -1,10 +1,17 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+
+//import css in order
+ 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+
+
+
+import Input from "../components/input";
 
 export default function SignupPage() {
   const [error, setError] = useState("");
@@ -79,6 +86,8 @@ export default function SignupPage() {
           <Link to="/login">Login</Link>
         </Col>
       </Row>
+      <Input>
+      </Input>
     </Container>
   );
 }
