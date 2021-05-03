@@ -30,19 +30,20 @@ export default function AboutPage() {
   return (
     <Container>
       <Navbar></Navbar>
-    <Container className="about">
-      <Row>
-        <Col>
-          <h1>About</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Button variant="primary" type="submit" onClick={handleLogout}>
-            Logout
-          </Button>
-        </Col>
-      </Row>
+    <Container className="about-bg about">
+      <div style={{opacity:1}}>
+
+        <Row>
+          <Col>
+            <h1>About</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p></p>
+          </Col>
+        </Row>
+      </div>
     </Container>
 
     </Container>
