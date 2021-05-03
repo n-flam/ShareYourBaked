@@ -1,17 +1,21 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-//import css in order
- 
+//import components
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Navbar from "./Navbar";
+
+
+
 
 
 
 import Input from "../components/input";
+// import { Navbar } from "react-bootstrap";
 
 export default function SignupPage() {
   const [error, setError] = useState("");
@@ -48,6 +52,8 @@ export default function SignupPage() {
   }
 
   return (
+    <Container>
+      <Navbar></Navbar>
     <Container>
       <Row>
         <Col>
@@ -89,5 +95,8 @@ export default function SignupPage() {
       <Input>
       </Input>
     </Container>
+    </Container>
+
+    
   );
 }

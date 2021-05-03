@@ -43,11 +43,11 @@ function App() {
         <Route exact path="/about">
           <About />
         </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
         <ProtectedRoute exact path="/">
           <HomePage />
-        </ProtectedRoute>
-        <ProtectedRoute exact path="/contact">
-          <Contact />
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>

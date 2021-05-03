@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+
+//import components
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import Navbar from "./Navbar";
 
 export default function AboutPage() {
   const [error, setError] = useState("");
@@ -25,6 +28,8 @@ export default function AboutPage() {
   }
 
   return (
+    <Container>
+      <Navbar></Navbar>
     <Container className="about">
       <Row>
         <Col>
@@ -38,6 +43,8 @@ export default function AboutPage() {
           </Button>
         </Col>
       </Row>
+    </Container>
+
     </Container>
   );
 }
