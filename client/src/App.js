@@ -16,10 +16,10 @@ import './css/generalstyle.css';
 // import * as serviceWorker from './serviceWorker';
 
 //import components
-import {Coalesce} from 'ambient-cbg';
+import {Shift} from 'ambient-cbg';
 
 //import pages
-import Navbar from './containers/Navbar.js';
+// import Navbar from './containers/Navbar.js';
 import ProtectedRoute from "./routes/ProtectedRoute";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
@@ -31,7 +31,7 @@ import About from "./pages/AboutPage";
 function App() {
   return (
     <div>
-       <Coalesce/>
+       <Shift/>
           <BrowserRouter>
       <Switch>
         <Route exact path="/login">
