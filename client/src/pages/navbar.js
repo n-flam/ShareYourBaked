@@ -36,6 +36,7 @@ export default function CenteredTabs() {
     {title: "Home", href: "/home"},
     {title: "Contact", href: "/contact"},
     {title: "About", href: "/about"},
+    {title: "Logout", href: "/logout"},
   ]);
 
 

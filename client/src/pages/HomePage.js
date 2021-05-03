@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
+
+//import components
+import Navbar from "./Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import OfferList from "./OfferList";
+import CurrentUser from "./CurrentUser";
+// import { Navbar } from "react-bootstrap";
 
 
 export default function LoginPage() {
@@ -49,6 +55,8 @@ export default function LoginPage() {
 
   return (
     <Container>
+      <Navbar></Navbar>
+      <Container className="home">
       <Row>
         <Col>
           <h1>User</h1>
@@ -56,11 +64,18 @@ export default function LoginPage() {
       </Row>
       <Row>
         <Col>
+        <CurrentUser></CurrentUser>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        <OfferList></OfferList>
           <Button variant="primary" type="submit" onClick={handleLogout}>
             Logout
           </Button>
         </Col>
       </Row>
+      </Container>
     </Container>
   );
 }

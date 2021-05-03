@@ -54,7 +54,7 @@ export default function SignupPage() {
   return (
     <Container>
       <Navbar></Navbar>
-    <Container>
+    <Container className="signup">
       <Row>
         <Col>
           <h1>Signup</h1>
@@ -95,6 +95,7 @@ export default function SignupPage() {
       <Input>
       </Input>
     </Container>
+    
     </Container>
 
     

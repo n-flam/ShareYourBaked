@@ -1,12 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+
+//import components
+import Navbar from "./Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-import Navbar from "./Navbar";
 
 
 export default function LoginPage() {
@@ -46,7 +48,7 @@ export default function LoginPage() {
   return (
     <Container>
       <Navbar></Navbar>
-          <Container>
+          <Container className="login">
       <Row>
         <Col>
           <h1>Login</h1>

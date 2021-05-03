@@ -22,10 +22,34 @@ body {
     transition: all 0.5s ease-in-out;
   }
 
-  .about {
-    background-color: blue;
-  }
-
   .signup {
     background-color: azure;
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .login {
+    background-color: azure;
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .contact {
+    background-color: azure;
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .about {
+    background-color: blue;
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+
+  }
+
+  .home {
+    background-color: rgb(230, 230, 238);
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+
   }
