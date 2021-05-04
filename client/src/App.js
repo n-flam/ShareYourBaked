@@ -27,7 +27,7 @@ import {Shift} from 'ambient-cbg';
 import ProtectedRoute from "./routes/ProtectedRoute";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import HomePage from "./pages/UserPage";
+import UserPage from "./pages/UserPage";
 import Contact from "./pages/ContactPage";
 import About from "./pages/AboutPage";
 
@@ -51,7 +51,7 @@ function App() {
           <Contact />
         </Route>
         <ProtectedRoute exact path="/">
-          <HomePage />
+          <UserPage />
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>

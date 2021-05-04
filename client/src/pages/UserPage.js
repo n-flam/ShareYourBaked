@@ -35,6 +35,27 @@ export default function UserPage() {
       });
   }, []);
 
+  useEffect(() => {
+    fetch("/api/bakedgoods", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((resp) => {
+        if (resp.status !== 200) {
+          throw resp.statusText;
+        }
+        return resp.json();
+      })
+      .then((data) => {
+        setBakedgoods(data);
+        console.log(data);
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  }, []);
+
   function handleLogout() {
     fetch("/api/logout", {
       headers: {
@@ -54,7 +75,8 @@ export default function UserPage() {
 
   return (
     <main>
-      <Navbar></Navbar>
+      <Container>
+      <Navbar />
       <Container className="currentuser"> 
         <Avatar rounded />
       </Container>
@@ -67,10 +89,10 @@ export default function UserPage() {
       <Row>
         <Col>
         <RecipeContainer/>
-    
         </Col>
       </Row>
       </Container>
+      </Container>    
       </main>
 
       
