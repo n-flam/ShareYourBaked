@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Avatar from "../components/Avatar";
 import RecipeContainer from "../containers/Recipe/RecipeContainer";
+import RecipeCard from "../containers/Recipe/RecipeCard";
 // import { Navbar } from "react-bootstrap";
 
 
@@ -89,6 +90,11 @@ export default function UserPage() {
       <Row>
         <Col>
         <RecipeContainer/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        {/* <RecipeCard></RecipeCard> */}
         </Col>
       </Row>
       </Container>
