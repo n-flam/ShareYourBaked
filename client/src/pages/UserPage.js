@@ -5,8 +5,6 @@ import Navbar from "../containers/Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import OfferList from "../containers/OfferList";
 import Avatar from "../components/Avatar";
 import RecipeContainer from "../containers/Recipe/RecipeContainer";
 // import { Navbar } from "react-bootstrap";

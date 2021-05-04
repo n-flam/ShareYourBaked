@@ -45,7 +45,7 @@ class Contact extends React.Component {
         <Navbar></Navbar>
 
         <Container
-          className="paralax-mf footer-paralax bg-image sect-mt4 route"
+          className="contact paralax-mf footer-paralax bg-image sect-mt4 route"
           style={{ backgroundImage: "url(" + imageOverlay + ")" }}>
           <Row>
             <Col>

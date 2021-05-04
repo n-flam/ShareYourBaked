@@ -8,7 +8,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import './img/icons/css/ionicons.css';
 // import './img/font-awesome/css/font-awesome.css';
 // import 'lightbox2/dist/css/lightbox.min.css'
-import './css/generalstyle.css';
+import './css/general-style.css';
+import './css/pages.css';
+import './css/container-general.css';
+
+
 
 
 //import js libraries
