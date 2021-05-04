@@ -31,9 +31,9 @@
     background: rgba(204, 204, 204, 0.5);
   }
 
-  .home {
+  .recipe-list-container {
     background-color: rgb(230, 230, 238);
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 20px 20px 40px 20px;
 
   }

@@ -78,10 +78,10 @@ export default function UserPage() {
     <main>
       <Container>
       <Navbar />
-      <Container className="currentuser"> 
+      <Container className="avatar"> 
         <Avatar rounded />
       </Container>
-      <Container className="home">
+      <Container className="recipe-list-container">
       <Row>
         <Col>
           <h1>User</h1>

@@ -10,8 +10,11 @@
     text-underline-position: under rgb(226, 124, 7);
   }
 
-  .currentuser {
+  .avatar {
     background-color: cadetblue;
     margin-top: 20px;
     padding: 20px 20px 40px 20px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+
   }
