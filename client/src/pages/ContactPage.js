@@ -22,7 +22,7 @@ function sendEmail(e) {
 
   emailjs
     .sendForm(
-      "gmail",
+      "service_duahufk",
       "template_m4l9ig7",
       e.target,
       "user_DGYRSqkIH0LDawhn5sLvQ"
@@ -35,7 +35,7 @@ function sendEmail(e) {
         console.log(error.text);
       }
     );
-  e.target.restart();
+  // e.target.restart();
 }
 
 class Contact extends React.Component {
