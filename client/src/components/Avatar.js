@@ -8,13 +8,14 @@ const avatar = "https://i.pravatar.cc/75";
 
 
 export default function Avatar(props) {
-    const [recipes, setRecipes] = useState([
-        {
-            img: '',
-            name: 'BOB',
-            
-        }
-    ]);
+    const [user, setUser] = useState({});
+
+    useEffect(() => {
+      fetch("/api/user_data")
+        .then((resp) => resp.json())
+        .then((user) => setUser(user));
+    }, []);
+  
     return (
     <div>
             <Image src={props.src || avatar} roundedCircle={props.rounded} />

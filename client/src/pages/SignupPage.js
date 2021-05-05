@@ -21,6 +21,8 @@ export default function SignupPage() {
   const [error, setError] = useState("");
   const emailRef = useRef();
   const passwordRef = useRef();
+  const imageUrl = useRef();
+  const name = useRef();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -28,6 +30,7 @@ export default function SignupPage() {
     const newUser = {
       email: emailRef.current.value,
       password: passwordRef.current.value,
+
     };
 
     fetch("/api/signup", {
@@ -50,6 +53,21 @@ export default function SignupPage() {
         setError(error);
       });
   }
+
+    const links = [{
+      title: "Landing",
+      href: '/',
+    },
+    {
+      title: "Login",
+      href: '/login',
+    },
+    
+    {title: "Signup", href: "/signup"},
+    {title: "Contact", href: "/contact"},
+    {title: "About", href: "/about"},
+    
+  ];
 
   return (
     <Container>
@@ -80,6 +98,25 @@ export default function SignupPage() {
                 placeholder="Password"
               />
             </Form.Group>
+
+            <Form.Group controlId="formBasicName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                ref={name}
+                type="name"
+                placeholder="Name"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicImage">
+              <Form.Label>Image</Form.Label>
+              <Form.Control
+                ref={imageUrl}
+                type="string"
+                placeholder="Image"
+              />
+            </Form.Group>
+
             {error && <Form.Text className="text-muted">{error}</Form.Text>}
             <Button variant="primary" type="submit" onClick={handleSubmit}>
               Submit
@@ -87,13 +124,8 @@ export default function SignupPage() {
           </Form>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Link to="/login">Login</Link>
-        </Col>
-      </Row>
-      <Input>
-      </Input>
+     
+     
     </Container>
     
     </Container>
