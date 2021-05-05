@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Navbar from "../containers/Navbar";
+import Carousel from "../components/CarouselAbout";
 
 export default function AboutPage() {
   const [error, setError] = useState("");
@@ -17,7 +18,9 @@ export default function AboutPage() {
 
         <Row>
           <Col>
-            <h1>About</h1>
+          <Carousel>
+          <h1>About</h1>
+          </Carousel>
           </Col>
         </Row>
         <Row>
