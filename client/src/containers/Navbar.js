@@ -25,7 +25,7 @@ export default function Navbar() {
   if (user.email) {
     links = [
       {
-        title: "Landing",
+        title: "Login",
         href: "/",
       },
       { title: "User", href: "/user" },
@@ -46,12 +46,8 @@ export default function Navbar() {
   } else {
     links = [
       {
-        title: "Landing",
-        href: "/",
-      },
-      {
         title: "Login",
-        href: "/login",
+        href: "/",
       },
       { title: "Signup", href: "/signup" },
       { title: "Contact", href: "/contact" },

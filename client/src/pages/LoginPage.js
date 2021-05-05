@@ -84,11 +84,7 @@ export default function LoginPage() {
           </Form>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Link to="/signup">Signup</Link>
-        </Col>
-      </Row>
+      
     </Container>
     </Container>
 

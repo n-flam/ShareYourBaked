@@ -118,7 +118,7 @@ export default function SignupPage() {
             </Form.Group>
 
             {error && <Form.Text className="text-muted">{error}</Form.Text>}
-            <Button variant="primary" type="submit" onClick={handleSubmit}>
+            <Button variant="outline-warning" type="submit" onClick={handleSubmit}>
               Submit
             </Button>
           </Form>
