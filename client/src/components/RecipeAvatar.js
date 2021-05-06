@@ -3,9 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
 // TODO: fix to correct avatar
-const avatar = "https://i.pravatar.cc/75";
+const RecipeAvatar = "https://i.pravatar.cc/75";
 
-export default function Avatar(props) {
+export default function RecipeAvatar(props) {
   return (
     <div>
       <Row>

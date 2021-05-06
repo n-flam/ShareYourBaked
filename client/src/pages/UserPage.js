@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Avatar from "../components/Avatar";
+import RecipeAvatar from "../components/RecipeAvatar";
 import RecipeContainer from "../containers/Recipe/RecipeContainer";
 import RecipeCard from "../containers/Recipe/RecipeCard";
 // import { Navbar } from "react-bootstrap";
