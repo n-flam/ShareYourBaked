@@ -21,6 +21,8 @@ module.exports = function (app) {
     db.User.create({
       email: req.body.email,
       password: req.body.password,
+      imageUrl: req.body.imageUrl,
+      name: req.body.name,
     })
       .then(() => {
         res.redirect(307, "/api/login");
@@ -35,6 +37,14 @@ module.exports = function (app) {
   app.get("/api/logout", (req, res) => {
     req.logout();
     res.end();
+  });
+
+  app.get("/api/userDetail", (req, res) => {
+    db.User.findByPk(req.user.id)
+    .then(data => {
+      data.password = undefined;
+      res.json(data);
+    });
   });
 
   // Route for getting some data about our user to be used client side

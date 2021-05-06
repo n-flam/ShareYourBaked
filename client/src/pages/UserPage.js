@@ -12,79 +12,17 @@ import RecipeCard from "../containers/Recipe/RecipeCard";
 
 
 export default function UserPage() {
-  const [error, setError] = useState("");
-  const [bakedgoods, setBakedgoods] = useState([]);
-
-  useEffect(() => {
-    fetch("/api/bakedgoods", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => {
-        if (resp.status !== 200) {
-          throw resp.statusText;
-        }
-        return resp.json();
-      })
-      .then((data) => {
-        setBakedgoods(data);
-        console.log(data);
-      })
-      .catch((error) => {
-        setError(error);
-      });
-  }, []);
-
-  useEffect(() => {
-    fetch("/api/bakedgoods", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => {
-        if (resp.status !== 200) {
-          throw resp.statusText;
-        }
-        return resp.json();
-      })
-      .then((data) => {
-        setBakedgoods(data);
-        console.log(data);
-      })
-      .catch((error) => {
-        setError(error);
-      });
-  }, []);
-
-  function handleLogout() {
-    fetch("/api/logout", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => {
-        if (resp.status !== 200) {
-          throw resp.statusText;
-        }
-        window.location = "/login";
-      })
-      .catch((error) => {
-        setError(error);
-      });
-  }
-
   return (
     <main>
       <Container>
       <Navbar />
       <Container className="avatar"> 
-        <Avatar rounded />
+        <Avatar />
       </Container>
       <Container className="recipe-list-container">
       <Row>
         <Col>
-          <h1>User</h1>
+          <h1>BakedGoods</h1>
         </Col>
       </Row>
       <Row>

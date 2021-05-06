@@ -21,8 +21,8 @@ export default function SignupPage() {
   const [error, setError] = useState("");
   const emailRef = useRef();
   const passwordRef = useRef();
-  const imageUrl = useRef();
-  const name = useRef();
+  const imageUrlRef = useRef();
+  const nameRef = useRef();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -30,6 +30,8 @@ export default function SignupPage() {
     const newUser = {
       email: emailRef.current.value,
       password: passwordRef.current.value,
+      name: nameRef.current.value,
+      imageUrl: imageUrlRef.current.value,
 
     };
 
@@ -102,7 +104,7 @@ export default function SignupPage() {
             <Form.Group controlId="formBasicName">
               <Form.Label>Name</Form.Label>
               <Form.Control
-                ref={name}
+                ref={nameRef}
                 type="name"
                 placeholder="Name"
               />
@@ -111,7 +113,7 @@ export default function SignupPage() {
             <Form.Group controlId="formBasicImage">
               <Form.Label>Image</Form.Label>
               <Form.Control
-                ref={imageUrl}
+                ref={imageUrlRef}
                 type="string"
                 placeholder="Image"
               />

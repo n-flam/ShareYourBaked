@@ -12,16 +12,16 @@ INSERT INTO users (firstname, lastname, postcode, email, password, createdAt, up
 INSERT INTO users (firstname, lastname, postcode, email, password, createdAt, updatedAt) VALUES ('Nadja', 'Flam', '6051', 'nadja.flam@gmx.net', 'NFlma', 'NFlma', now(), now());
 
 -- Bakedgoods
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Quiche', 'egg,', '4', '', '', 'GF,Vegiatarien', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Plaetzchen', 'eggs, butter', '4', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Cherry Cake', '', '5', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Zimtschnecken', '', '5', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Strosemmel', '', '5', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Scones', '', '5', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Bun', '', '3', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Wholemeal Bread', '', '3', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Lemon Tart', '', '3', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Bugett', '', '', '2', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Creme Tart', '', '2', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Macaron', '', '5', '', '', '', now(), now());
-INSERT INTO bakedgoods (recipename, ingredience, pices, ingredience, categorie) VALUES ('Shortbread', '', '5', '', '', '', now(), now());
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Cherry Cake', 'eggs', '5', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Plaetzchen', 'eggs, butter', '4', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Quiche', 'egg,', '4', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Zimtschnecken', 'cinnamon', '5', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Strosemmel', 'flour', '5', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Scones', 'buter', '5', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Bun', 'oil', '3', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Wholemeal Bread', '', '3', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Lemon Tart', 'Lemon', '3', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Bugett', 'butter', '', '2', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Creme Tart', 'creme', '2', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Macaron', 'sugar', '5', '');
+INSERT INTO bakedgoods (recipename, ingredience, pices, categorie, createdAt, updatedAt) VALUES ('Shortbread', 'flour', '5', '');

@@ -1,43 +1,45 @@
-
-import React, {useState, useEffect} from 'react'
-import { Container } from 'react-bootstrap'
-import RecipeListItem from './RecipeListItem';
+import React, { useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
+import RecipeListItem from "./RecipeListItem";
 
 export default function RecipeContainer() {
+  const [error, setError] = useState("");
+  const [bakedgoods, setBakedgoods] = useState([]);
 
-    const [recipes, setRecipes] = useState([
-        {
-            img: '',
-            title: 'Masaka',
-            description: 'tomato, capsicum, eggs',
+  useEffect(() => {
+    fetch("/api/bakedgoods", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((resp) => {
+        if (resp.status !== 200) {
+          throw resp.statusText;
         }
-    ]);
+        return resp.json();
+      })
+      .then((data) => {
+        setBakedgoods(data);
+        console.log(data);
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  }, []);
 
-    useEffect(() => {
-        
-        // TODO: call api to populate the recipes
+  console.log({bakedgoods})
 
-
-    }, []); // put in empty array -- means to run this function for only 1 time when the component is loaded
-
-
-
-    return (
-        <Container>
-            {recipes.map((recipe) => {
-
-                return (
-                    <RecipeListItem 
-                        img={recipe.img}
-                        description={recipe.description}
-                        title={recipe.title}
-                    />
-                )
-
-            })}
-
-
-        </Container>
-        
-    )
+  return (
+    <Container>
+      {bakedgoods.map((good) => {
+        return (
+          <RecipeListItem
+            img={good.img}
+            description={good.description}
+            title={good.title}
+          />
+        );
+      })}
+    </Container>
+  );
 }
