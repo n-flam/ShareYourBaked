@@ -8,7 +8,7 @@ export default function () {
          <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-50"
           src="https://i.pravatar.cc"
           alt="Baking"
         />

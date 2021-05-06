@@ -21,6 +21,7 @@
     "@material-ui/icons": "^4.11.2",
     "ambient-cbg": "^1.0.4",
     "bcryptjs": "2.4.3",
+    "cloudinary-react": "^1.7.0",
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "express-session": "^1.16.1",
