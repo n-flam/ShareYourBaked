@@ -6,9 +6,7 @@ module.exports = function (app) {
   // Otherwise the user will be sent an error
   app.get("/api/bakedgoods", (req, res) => {
     db.Bakedgood.findAll({
-      UserId: {
-        [Op.not]: req.user.id,
-      },
+      include: db.User
     })
       .then((dbResponse) => {
         res.json(dbResponse);

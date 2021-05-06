@@ -5,25 +5,20 @@ import Image from "react-bootstrap/Image";
 // TODO: fix to correct avatar
 const avatar = "https://i.pravatar.cc/75";
 
-export default function Avatar() {
-  const [user, setUser] = useState({});
-
-  useEffect(() => {
-    fetch("/api/userDetail")
-      .then((resp) => resp.json())
-      .then((user) => setUser(user));
-  }, []);
-
-  console.log(user)
-
+export default function Avatar(props) {
   return (
     <div>
       <Row>
         <Col xs={12} sm={5} md={3}>
-        <Image width={75} height={75} src={user.imageUrl || avatar} roundedCircle />
+          <Image
+            width={75}
+            height={75}
+            src={props.user.imageUrl || avatar}
+            roundedCircle
+          />
         </Col>
         <Col xs={12} sm={7} md={9}>
-        <h3>{user.name}</h3>
+          <h3>{props.user.name}</h3>
         </Col>
       </Row>
     </div>

@@ -20,25 +20,17 @@ export default function RecipeContainer() {
       })
       .then((data) => {
         setBakedgoods(data);
-        console.log(data);
+        // console.log();
       })
       .catch((error) => {
         setError(error);
       });
   }, []);
 
-  console.log({bakedgoods})
-
   return (
     <Container>
       {bakedgoods.map((good) => {
-        return (
-          <RecipeListItem
-            img={good.img}
-            description={good.description}
-            title={good.title}
-          />
-        );
+        return <RecipeListItem good={good} />;
       })}
     </Container>
   );

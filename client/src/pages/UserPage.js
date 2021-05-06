@@ -12,12 +12,20 @@ import RecipeCard from "../containers/Recipe/RecipeCard";
 
 
 export default function UserPage() {
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    fetch("/api/userDetail")
+      .then((resp) => resp.json())
+      .then((user) => setUser(user));
+  }, []);
+
   return (
     <main>
       <Container>
       <Navbar />
       <Container className="avatar"> 
-        <Avatar />
+        <Avatar user={user} />
       </Container>
       <Container className="recipe-list-container">
       <Row>

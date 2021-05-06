@@ -30,6 +30,9 @@ module.exports = (sequelize, DataTypes) => {
     halal: {
       type: DataTypes.BOOLEAN,
     },
+    category: {
+      type: DataTypes.INTEGER,
+    },
   });
     // every Bakedgood belongs to only one user
   Bakedgood.associate = (db) => {
