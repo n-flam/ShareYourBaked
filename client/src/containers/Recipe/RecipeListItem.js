@@ -5,18 +5,20 @@ import Avatar from "../../components/Avatar";
 export default function RecipeListItem(props) {
   console.log(props);
   return (
-    <Row>
-      <Col xs={12} sm={5} md={3}>
-        <Avatar user={props.good.User}></Avatar>
-      </Col>
+    <div>
+      <Row>
+        <Col xs={12} sm={5} md={3}>
+          <Avatar user={props.good.User}></Avatar>
+        </Col>
 
-      <Col xs={12} sm={7} md={9}>
-        <img></img>
+        <Col xs={12} sm={7} md={9}>
+          {/* <img>{props.good.recipeurl}</img> */}
 
-        <h3>{props.good.recipename}</h3>
+          <h3>{props.good.recipename}</h3>
 
-        <p>{props.good.description}</p>
-      </Col>
-    </Row>
+          <p>{props.good.ingredience}</p>
+        </Col>
+      </Row>
+    </div>
   );
 }
