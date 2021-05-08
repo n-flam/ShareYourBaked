@@ -33,6 +33,9 @@ module.exports = (sequelize, DataTypes) => {
     category: {
       type: DataTypes.INTEGER,
     },
+    imgurl: {
+      type: DataTypes.STRING,
+    },
   });
     // every Bakedgood belongs to only one user
   Bakedgood.associate = (db) => {

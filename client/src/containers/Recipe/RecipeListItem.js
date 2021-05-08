@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import RecipeAvatar from "../../components/RecipeAvatar";
+import Avatar from "../../components/RecipeAvatar";
 
 export default function RecipeListItem(props) {
   console.log(props);
@@ -8,7 +8,7 @@ export default function RecipeListItem(props) {
     <div>
       <Row>
         <Col xs={12} sm={5} md={3}>
-          <RecipeAvatar user={props.good.User} ></RecipeAvatar>
+          <Avatar user={props.good.User} ></Avatar>
         </Col>
 
         <Col xs={12} sm={7} md={9}>
