@@ -75,7 +75,7 @@ export default function SignupPage() {
   return (
     <Container>
       <Navbar></Navbar>
-      <Container className="signup">
+      <Container className="bg-container signup">
         <Row>
           <Col>
             <h1>Signup</h1>

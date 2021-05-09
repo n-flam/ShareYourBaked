@@ -31,10 +31,10 @@ export default function UserPage() {
     <main>
       <Container>
         <Navbar />
-        <Container className="avatar">
+        <Container className="bg-container avatar">
           <Avatar user={user} />
         </Container>
-        <Container className="recipe-list-container">
+        <Container className="bg-container recipe-list-container">
           <Row>
             <Col>
               <h1>BakedGoods</h1>

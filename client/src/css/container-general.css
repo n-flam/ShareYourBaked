@@ -11,9 +11,9 @@
   }
 
   .avatar {
-    background-color: cadetblue;
+    background-color: rgb(189, 131, 105);
     margin-top: 20px;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 15px 20px;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 

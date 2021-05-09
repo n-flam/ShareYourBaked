@@ -47,7 +47,7 @@ export default function LoginPage() {
   return (
     <Container>
       <Navbar></Navbar>
-      <Container className="login">
+      <Container className="bg-container login">
         <Row>
           <Col>
             <h1>Login</h1>
