@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <Container>
       <Navbar></Navbar>
-    <Container className="about-bg about">
+    <Container className="bg-container about">
       <div style={{opacity:1}}>
 
         <Row>

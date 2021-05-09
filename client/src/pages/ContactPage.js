@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import Form from "react-bootstrap/Form";
 
 // $ npm install emailjs-com --save
 
@@ -11,8 +12,10 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 // import Button from "react-bootstrap/Button";
-import imageOverlay from "../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg";
+// import imageOverlay from "../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg";
 import Navbar from "../containers/Navbar";
+import Footer from "../components/Footer";
+
 // import './ContactUs.css';
 
 // export default function ContactUs() {
@@ -44,13 +47,12 @@ class Contact extends React.Component {
       <Container>
         <Navbar></Navbar>
 
-        <Container
-          className="contact paralax-mf footer-paralax bg-image sect-mt4 route"
-          style={{ backgroundImage: "url(" + imageOverlay + ")" }}>
+        <Container className="bg-container contact">
           <Row>
             <Col>
               <h5 className="title-left">Contact Us</h5>
-              <form className="contact-form" onSubmit={sendEmail}>
+              <Form className="contact-form" onSubmit={sendEmail}>
+              <label>Subject</label>
                 <input
                   type="text"
                   className="form-control"
@@ -59,6 +61,8 @@ class Contact extends React.Component {
                   data-rule="minlen:4"
                   data-msg="Please enter at least 8 chars of subject"
                 />
+
+                <label>Your Name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -68,15 +72,17 @@ class Contact extends React.Component {
                   data-msg="Please enter at least 4 chars"
                 />
 
+                <label>Your email</label>
                 <input
                   type="email"
                   className="form-control"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="name@example.com"
                   data-rule="email"
                   data-msg="Please enter a valid email"
                 />
 
+                <label>Message</label>
                 <textarea
                   className="form-control"
                   name="message"
@@ -84,16 +90,21 @@ class Contact extends React.Component {
                   data-msg="Please write something for us"
                   placeholder="Message"
                 ></textarea>
-                <button
+                
+
+                <Button
+                  variant="outline-warning"
                   type="submit"
                   className="button button-a button-big button-rouded"
                   value="Send"
                 >
                   Send Message
-                </button>
-              </form>
+                </Button>
+              </Form>
             </Col>
-            <Col>
+           
+          </Row> 
+          <Col>
               <p className="lead">
                 Whether you want to get in touch, talk about a project
                 collaboration, or just say hi, I'd love to hear from you.
@@ -101,11 +112,11 @@ class Contact extends React.Component {
                 Simply fill the from and send me an email.
               </p>
             </Col>
-          </Row>
           <Row>
             <i className="ion-social-linkedin"></i>
           </Row>
         </Container>
+        <Footer />
       </Container>
     );
   }
