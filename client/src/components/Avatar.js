@@ -6,6 +6,10 @@ import Image from "react-bootstrap/Image";
 const avatar = "https://i.pravatar.cc/75";
 
 export default function Avatar(props) {
+  if (props.user == null) {
+    return <div>Missing User.</div>;
+  }
+
   return (
     <div>
       <Row>
@@ -14,7 +18,7 @@ export default function Avatar(props) {
             width={75}
             height={75}
             src={props.user.imageUrl || avatar}
-            // roundedCircle
+            roundedCircle
           />
         </Col>
         <Col xs={12} sm={7} md={9}>

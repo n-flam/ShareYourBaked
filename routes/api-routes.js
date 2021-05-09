@@ -23,6 +23,8 @@ module.exports = function (app) {
       password: req.body.password,
       imageUrl: req.body.imageUrl,
       name: req.body.name,
+      phoneNumber: req.body.phoneNumber,
+      postCode: req.body.postCode,
     })
       .then(() => {
         res.redirect(307, "/api/login");
@@ -40,6 +42,7 @@ module.exports = function (app) {
   });
 
   app.get("/api/userDetail", (req, res) => {
+    console.log("bla" + req.user.id)
     db.User.findByPk(req.user.id)
     .then(data => {
       data.password = undefined;

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 //import components
 import Container from "react-bootstrap/Container";
@@ -8,13 +8,14 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Navbar from "../containers/Navbar";
+// import SignupForm from "../containers/SignupForm";
 
 
 
 
 
 
-import Input from "../containers/SignupInput";
+// import Input from "../containers/SignupInput";
 // import { Navbar } from "react-bootstrap";
 
 export default function SignupPage() {
@@ -23,6 +24,8 @@ export default function SignupPage() {
   const passwordRef = useRef();
   const imageUrlRef = useRef();
   const nameRef = useRef();
+  const phoneNumberRef = useRef();
+  const postCodeRef = useRef();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -31,6 +34,8 @@ export default function SignupPage() {
       email: emailRef.current.value,
       password: passwordRef.current.value,
       name: nameRef.current.value,
+      phoneNumber: phoneNumberRef.current.value,
+      postCode: postCodeRef.current.value,
       imageUrl: imageUrlRef.current.value,
 
     };
@@ -82,7 +87,35 @@ export default function SignupPage() {
       </Row>
       <Row>
         <Col>
-          <Form>
+        {/* <SignupForm/> */}
+        <Form>
+          <Form.Group controlId="formBasicName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                ref={nameRef}
+                type="name"
+                placeholder="Name"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPhone">
+              <Form.Label>Phonenumber</Form.Label>
+              <Form.Control
+                ref={phoneNumberRef}
+                type="number"
+                placeholder="Phonenumber"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPostdcode">
+              <Form.Label>Postcode</Form.Label>
+              <Form.Control
+                ref={postCodeRef}
+                type="number"
+                placeholder="Postcode"
+              />
+            </Form.Group>
+
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -98,15 +131,6 @@ export default function SignupPage() {
                 ref={passwordRef}
                 type="password"
                 placeholder="Password"
-              />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                ref={nameRef}
-                type="name"
-                placeholder="Name"
               />
             </Form.Group>
 

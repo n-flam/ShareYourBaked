@@ -3,9 +3,16 @@ import { Col, Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
 // TODO: fix to correct avatar
-const avatar = "https://www.thecountrycook.net/wp-content/uploads/2019/05/MARASCHINO-CHERRY-CAKE-thumbnail.jpg";
+const avatar = "https://i.pravatar.cc/75";
 
 export default function RecipeAvatar(props) {
+  if (props.good.imgurl=== null) {
+    return (
+      <div>
+              loading...
+      </div>
+    );
+  }
   return (
     <div>
       <Row>
@@ -13,12 +20,12 @@ export default function RecipeAvatar(props) {
           <Image
             width={75}
             height={75}
-            src={props.user.imgurl || avatar}
+            src={props.good.imgurl || avatar}
             // roundedCircle
           />
         </Col>
         <Col xs={12} sm={7} md={9}>
-          <h3>{props.user.name}</h3>
+          <h3>{props.good.recipename}</h3>
         </Col>
       </Row>
     </div>

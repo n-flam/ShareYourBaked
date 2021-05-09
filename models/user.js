@@ -23,6 +23,12 @@ module.exports = function(sequelize, DataTypes) {
     name: {
       type: DataTypes.STRING,
     },
+    postCode: {
+      type: DataTypes.INTEGER,
+    },
+    phoneNumber: {
+      type: DataTypes.INTEGER,
+    },
   });
   // every user isa able to have many goods
   User.associate = (db) => {
