@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-//import components
+//import containers
 import Navbar from "../containers/Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
+//import components
 import Avatar from "../components/Avatar";
 import RecipeContainer from "../containers/Recipe/RecipeContainer";
 import RecipeCard from "../containers/Recipe/RecipeCard";
-// import { Navbar } from "react-bootstrap";
+import Footer from "../components/Footer";
 
 export default function UserPage() {
   const [user, setUser] = useState({});
@@ -47,6 +49,7 @@ export default function UserPage() {
             <Col>{/* <RecipeCard></RecipeCard> */}</Col>
           </Row>
         </Container>
+        <Footer />
       </Container>
     </main>
   );

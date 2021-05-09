@@ -8,12 +8,9 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Navbar from "../containers/Navbar";
+import Footer from "../components/Footer";
+
 // import SignupForm from "../containers/SignupForm";
-
-
-
-
-
 
 // import Input from "../containers/SignupInput";
 // import { Navbar } from "react-bootstrap";
@@ -37,7 +34,6 @@ export default function SignupPage() {
       phoneNumber: phoneNumberRef.current.value,
       postCode: postCodeRef.current.value,
       imageUrl: imageUrlRef.current.value,
-
     };
 
     fetch("/api/signup", {
@@ -61,101 +57,97 @@ export default function SignupPage() {
       });
   }
 
-    const links = [{
+  const links = [
+    {
       title: "Landing",
-      href: '/',
+      href: "/",
     },
     {
       title: "Login",
-      href: '/login',
+      href: "/login",
     },
-    
-    {title: "Signup", href: "/signup"},
-    {title: "Contact", href: "/contact"},
-    {title: "About", href: "/about"},
-    
+
+    { title: "Signup", href: "/signup" },
+    { title: "Contact", href: "/contact" },
+    { title: "About", href: "/about" },
   ];
 
   return (
     <Container>
       <Navbar></Navbar>
-    <Container className="signup">
-      <Row>
-        <Col>
-          <h1>Signup</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-        {/* <SignupForm/> */}
-        <Form>
-          <Form.Group controlId="formBasicName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                ref={nameRef}
-                type="name"
-                placeholder="Name"
-              />
-            </Form.Group>
+      <Container className="signup">
+        <Row>
+          <Col>
+            <h1>Signup</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            {/* <SignupForm/> */}
+            <Form>
+              <Form.Group controlId="formBasicName">
+                <Form.Label>Name</Form.Label>
+                <Form.Control ref={nameRef} type="name" placeholder="Name" />
+              </Form.Group>
 
-            <Form.Group controlId="formBasicPhone">
-              <Form.Label>Phonenumber</Form.Label>
-              <Form.Control
-                ref={phoneNumberRef}
-                type="number"
-                placeholder="Phonenumber"
-              />
-            </Form.Group>
+              <Form.Group controlId="formBasicPhone">
+                <Form.Label>Phonenumber</Form.Label>
+                <Form.Control
+                  ref={phoneNumberRef}
+                  type="number"
+                  placeholder="Phonenumber"
+                />
+              </Form.Group>
 
-            <Form.Group controlId="formBasicPostdcode">
-              <Form.Label>Postcode</Form.Label>
-              <Form.Control
-                ref={postCodeRef}
-                type="number"
-                placeholder="Postcode"
-              />
-            </Form.Group>
+              <Form.Group controlId="formBasicPostdcode">
+                <Form.Label>Postcode</Form.Label>
+                <Form.Control
+                  ref={postCodeRef}
+                  type="number"
+                  placeholder="Postcode"
+                />
+              </Form.Group>
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                ref={emailRef}
-                type="email"
-                placeholder="Enter email"
-              />
-            </Form.Group>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control
+                  ref={emailRef}
+                  type="email"
+                  placeholder="Enter email"
+                />
+              </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                ref={passwordRef}
-                type="password"
-                placeholder="Password"
-              />
-            </Form.Group>
+              <Form.Group controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                  ref={passwordRef}
+                  type="password"
+                  placeholder="Password"
+                />
+              </Form.Group>
 
-            <Form.Group controlId="formBasicImage">
-              <Form.Label>Image</Form.Label>
-              <Form.Control
-                ref={imageUrlRef}
-                type="string"
-                placeholder="Image"
-              />
-            </Form.Group>
+              <Form.Group controlId="formBasicImage">
+                <Form.Label>Image</Form.Label>
+                <Form.Control
+                  ref={imageUrlRef}
+                  type="string"
+                  placeholder="Image"
+                />
+              </Form.Group>
 
-            {error && <Form.Text className="text-muted">{error}</Form.Text>}
-            <Button variant="outline-warning" type="submit" onClick={handleSubmit}>
-              Submit
-            </Button>
-          </Form>
-        </Col>
-      </Row>
-     
-     
+              {error && <Form.Text className="text-muted">{error}</Form.Text>}
+              <Button
+                variant="outline-warning"
+                type="submit"
+                onClick={handleSubmit}
+              >
+                Submit
+              </Button>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
     </Container>
-    
-    </Container>
-
-    
   );
 }
