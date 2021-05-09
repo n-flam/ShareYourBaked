@@ -3,7 +3,8 @@ body {
 }
   h3 {
     color: #302f2f;
-    text-align: left;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
   }
 
   h1,

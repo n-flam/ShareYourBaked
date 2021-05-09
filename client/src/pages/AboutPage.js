@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Navbar from "../containers/Navbar";
 import Carousel from "../components/CarouselAbout";
+import Footer from "../components/Footer";
 
 export default function AboutPage() {
   const [error, setError] = useState("");
@@ -56,6 +57,7 @@ If someone is interested, the person can contact you and you can exchange the ba
         </Row>
       </div>
     </Container>
+    <Footer></Footer>
 
     </Container>
   );

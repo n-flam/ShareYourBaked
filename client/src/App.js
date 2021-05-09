@@ -11,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './css/general-style.css';
 import './css/pages.css';
 import './css/container-general.css';
+import './css/components-general.css';
+
 
 
 
