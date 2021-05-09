@@ -24,10 +24,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
     },
     postCode: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
     phoneNumber: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
   });
   // every user isa able to have many goods
