@@ -4,7 +4,7 @@ import Avatar from "../../components/Avatar";
 
 export default function RecipeListItem(props) {
   return (
-    <div>
+    <div className="recipe-list-item">
       <Row>
         <Col xs={12} sm={5} md={3}>
           <Avatar user={props.good.User}></Avatar>
@@ -12,7 +12,7 @@ export default function RecipeListItem(props) {
 
         <Col xs={12} sm={7} md={9}>
           {/* <img>{props.good.recipeurl}</img> */}
-          <h3>{props.good.recipename}</h3>
+          <h4>{props.good.recipename}</h4>
           <p>{props.good.ingredience}</p>
         </Col>
       </Row>

@@ -37,7 +37,7 @@ export default function UserPage() {
         <Container className="bg-container recipe-list-container">
           <Row>
             <Col>
-              <h1>BakedGoods</h1>
+              <h2>BakedGoods</h2>
             </Col>
           </Row>
           <Row>
