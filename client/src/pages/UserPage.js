@@ -45,9 +45,7 @@ export default function UserPage() {
               <RecipeContainer />
             </Col>
           </Row>
-          <Row>
-            <Col>{/* <RecipeCard></RecipeCard> */}</Col>
-          </Row>
+          
         </Container>
         <Footer />
       </Container>

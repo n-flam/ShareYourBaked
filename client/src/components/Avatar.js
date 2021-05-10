@@ -23,7 +23,7 @@ export default function Avatar(props) {
           />
         </Col>
         <Col xs={12} sm={7} md={9}>
-          <h3>{props.user.name}</h3>
+          <h4>{props.user.name}</h4>
         </Col>
       </Row>
     </div>

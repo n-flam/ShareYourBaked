@@ -11,7 +11,7 @@ export default function RecipeListItem(props) {
     <div className="recipe-list-item">
       <Row>
         <Col xs={12} sm={5} md={3}>
-        <Avatar/>
+        <RecipeAvatar/>
 
           {/* <Avatar user={props.good.User}></Avatar> */}
         </Col>

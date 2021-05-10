@@ -7,9 +7,13 @@ body {
     margin: 20px 0px 20px 0px;
   }
 
+  h4 {
+    color: #302f2f;
+    text-align: left;
+  }  
+
   h1,
   h2,
-  h4,
   h5,
   h6 {
     color: #302f2f;

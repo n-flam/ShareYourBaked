@@ -5,7 +5,7 @@ import Image from "react-bootstrap/Image";
 // TODO: fix to correct avatar
 const recipeavatar = "https://i.pravatar.cc/75";
 
-export default function RecipeAvatar(props) {
+export default function RecipeAvatarCard(props) {
   // if (props.user == null) {
   //   return <div>Missing User.</div>;
   // }
@@ -14,9 +14,9 @@ export default function RecipeAvatar(props) {
       <Row>
         <Col xs={12} sm={5} md={3}>
           <Image
-            width={100}
+            width={250}
             height={100}
-            src={recipeavatar}
+            src={RecipeAvatarCard}
             // src={props.good.imgurl || avatar}
             // roundedCircle
           />

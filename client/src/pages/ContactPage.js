@@ -17,6 +17,7 @@ import Navbar from "../containers/Navbar";
 
 import Footer from "../components/Footer";
 import CarouselContact from "../components/CarouselContact";
+import RecipeCard from "../containers/Recipe/RecipeCard"
 
 // import './ContactUs.css';
 
@@ -129,6 +130,7 @@ class Contact extends React.Component {
 
           <Row>
             <Col>
+            <RecipeCard></RecipeCard>
               <i className="ion-social-linkedin"></i>
             </Col>
           </Row>
