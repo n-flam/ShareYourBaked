@@ -29,9 +29,10 @@ export default function RecipeListItem(props) {
           <Row>
             <Col>
             <RecipeCard></RecipeCard>
-            <p>ingredience:{props.good.ingredience}</p>
-            <p>pieces:{props.good.pieces}</p>
-            {/* <p>Contact:{props.user.phoneNumber}</p> */}
+            <p>Ingredience: {props.good.ingredience}</p>
+            <p>Pieces: {props.good.pieces}</p>
+            <p>Phonenumber: {props.good.phonenumber}</p>
+            {/* <p>Contact:{props.user.phonenumber}</p> */}
             </Col>
           </Row>
         </div>

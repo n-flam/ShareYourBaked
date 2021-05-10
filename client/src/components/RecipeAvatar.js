@@ -9,6 +9,7 @@ export default function RecipeAvatar(props) {
   // if (props.user == null) {
   //   return <div>Missing User.</div>;
   // }
+
   return (
     <div>
       <Row>
@@ -17,7 +18,7 @@ export default function RecipeAvatar(props) {
             width={100}
             height={100}
             src={recipeavatar}
-            // src={props.good.imgurl || avatar}
+            // src={props.good.imgurl || recipeavatar}
             // roundedCircle
           />
         </Col>
