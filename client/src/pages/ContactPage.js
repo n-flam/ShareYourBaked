@@ -15,10 +15,8 @@ import Button from "react-bootstrap/Button";
 // import imageOverlay from "../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg";
 import Navbar from "../containers/Navbar";
 
-
 import Footer from "../components/Footer";
 import CarouselContact from "../components/CarouselContact";
-
 
 // import './ContactUs.css';
 
@@ -53,78 +51,86 @@ class Contact extends React.Component {
 
         <Container className="bg-container contact">
           <Row>
-            <Col>
-            </Col>
+            <Col></Col>
           </Row>
-          <CarouselContact>
-                <h1>Contact Us</h1>
-              </CarouselContact>
+          <CarouselContact />
           <Row>
             <Col>
-              <h5 className="title-left">Contact Us</h5>
+              <h3>Contact Us</h3>
+            </Col>
+          </Row>
+          <Row>
+          <Col>
+            <p className="italic">
+              Whether you want to get in touch, talk about a project
+              collaboration, or just say hi, I'd love to hear from you.
+              Simply fill the from and send me an email.
+            </p>
+          </Col>
+          </Row>
+          <Row>
+            <Col>
               <Form className="contact-form" onSubmit={sendEmail}>
-              <label>Subject</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="subject"
-                  placeholder="Subject"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 8 chars of subject"
-                />
+                <Form.Group>
+                  <Form.Label>Subject</Form.Label>
+                  <Form.Control
+                    type="text"
+                    className="form-control"
+                    name="subject"
+                    placeholder="Subject"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 8 chars of subject"
+                  />
+                </Form.Group>
 
-                <label>Your Name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  placeholder="Your Name"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
-                />
+                <Form.Group>
+                  <Form.Label>Your Name</Form.Label>
+                  <Form.Control
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    placeholder="Your Name"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars"
+                  />
+                </Form.Group>
 
-                <label>Your email</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  name="email"
-                  placeholder="name@example.com"
-                  data-rule="email"
-                  data-msg="Please enter a valid email"
-                />
+                <Form.Group>
+                  <Form.Label>Your email</Form.Label>
+                  <Form.Control
+                    type="email"
+                    className="form-control"
+                    name="email"
+                    placeholder="name@example.com"
+                    data-rule="email"
+                    data-msg="Please enter a valid email"
+                  />
+                </Form.Group>
 
-                <label>Message</label>
-                <textarea
-                  className="form-control"
-                  name="message"
-                  data-rule="required"
-                  data-msg="Please write something for us"
-                  placeholder="Message"
-                ></textarea>
-                
+                <Form.Group>
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    className="form-control"
+                    name="message"
+                    data-rule="required"
+                    data-msg="Please write something for us"
+                    placeholder="Message"
+                  />
+                </Form.Group>
 
-                <Button
-                  variant="outline-warning"
-                  type="submit"
-                  className="button button-a button-big button-rouded"
-                  value="Send"
-                >
+                <Button variant="outline-warning" type="submit" value="Send">
                   Send Message
                 </Button>
               </Form>
             </Col>
-           
-          </Row> 
-          <Col>
-              <p className="lead">
-                Whether you want to get in touch, talk about a project
-                collaboration, or just say hi, I'd love to hear from you.
-                <br />
-                Simply fill the from and send me an email.
-              </p>
-            </Col>
+          </Row>
+
           <Row>
-            <i className="ion-social-linkedin"></i>
+            <Col>
+              <i className="ion-social-linkedin"></i>
+            </Col>
           </Row>
         </Container>
         <Footer />

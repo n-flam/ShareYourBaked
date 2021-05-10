@@ -3,16 +3,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
 // TODO: fix to correct avatar
-const avatar = "https://i.pravatar.cc/75";
+const recipeavatar = "https://i.pravatar.cc/75";
 
 export default function RecipeAvatar(props) {
-  if (props.good.imgurl=== null) {
-    return (
-      <div>
-              loading...
-      </div>
-    );
-  }
+  // if (props.user == null) {
+  //   return <div>Missing User.</div>;
+  // }
   return (
     <div>
       <Row>
@@ -20,7 +16,8 @@ export default function RecipeAvatar(props) {
           <Image
             width={75}
             height={75}
-            src={props.good.imgurl || avatar}
+            src={recipeavatar}
+            // src={props.good.imgurl || avatar}
             // roundedCircle
           />
         </Col>

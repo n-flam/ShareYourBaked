@@ -18,14 +18,12 @@ export default function AboutPage() {
         <div style={{ opacity: 1 }}>
           <Row>
             <Col>
-              <CarouselAbout>
-                <h1>About</h1>
-              </CarouselAbout>
+              <CarouselAbout />
             </Col>
           </Row>
           <Row>
             <Col>
-              <h3>Share Your Baked</h3>
+              <h3>About Share Your Baked</h3>
             </Col>
           </Row>
           <Row>

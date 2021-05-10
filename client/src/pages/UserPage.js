@@ -5,11 +5,11 @@ import Navbar from "../containers/Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import RecipeContainer from "../containers/Recipe/RecipeContainer";
+import RecipeCard from "../containers/Recipe/RecipeCard";
 
 //import components
 import Avatar from "../components/Avatar";
-import RecipeContainer from "../containers/Recipe/RecipeContainer";
-import RecipeCard from "../containers/Recipe/RecipeCard";
 import Footer from "../components/Footer";
 
 export default function UserPage() {
