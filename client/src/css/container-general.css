@@ -27,6 +27,7 @@
 
   .recipe-list-item {
     margin-top: 15px;
-    border-bottom-color: rgb(77, 75, 75);
+    margin-bottom: 35px;
+    border-bottom-color: rgb(202, 202, 202);
     border-bottom-style: solid;
   }

@@ -17,7 +17,8 @@ export default function Avatar(props) {
           <Image
             width={75}
             height={75}
-            src={props.user.imageUrl || avatar}
+            src={avatar}
+            // src={props.user.imageUrl || avatar}
             roundedCircle
           />
         </Col>

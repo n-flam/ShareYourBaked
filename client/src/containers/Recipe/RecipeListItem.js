@@ -13,7 +13,7 @@ export default function RecipeListItem(props) {
         <Col xs={12} sm={7} md={9}>
           {/* <img>{props.good.recipeurl}</img> */}
           <h4>{props.good.recipename}</h4>
-          <p>{props.good.ingredience}</p>
+          <p>{props.good.description}</p>
         </Col>
       </Row>
     </div>
