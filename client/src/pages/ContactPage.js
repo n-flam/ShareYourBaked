@@ -130,7 +130,7 @@ class Contact extends React.Component {
 
           <Row>
             <Col>
-            <RecipeCard></RecipeCard>
+        
               <i className="ion-social-linkedin"></i>
             </Col>
           </Row>

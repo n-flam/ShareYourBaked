@@ -11,6 +11,7 @@ import RecipeCard from "../containers/Recipe/RecipeCard";
 //import components
 import Avatar from "../components/Avatar";
 import Footer from "../components/Footer";
+import RecipeAvatarCard from "../components/RecipeAvatarCard";
 
 export default function UserPage() {
   const [user, setUser] = useState({});
@@ -43,6 +44,11 @@ export default function UserPage() {
           <Row>
             <Col>
               <RecipeContainer />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+            <RecipeCard></RecipeCard>
             </Col>
           </Row>
           

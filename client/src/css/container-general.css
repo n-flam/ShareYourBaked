@@ -30,4 +30,5 @@
     margin-bottom: 15px;
     border-bottom-color: rgb(202, 202, 202);
     border-bottom-style: solid;
+    cursor: pointer;
   }
