@@ -14,7 +14,11 @@ import Button from "react-bootstrap/Button";
 // import Button from "react-bootstrap/Button";
 // import imageOverlay from "../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg";
 import Navbar from "../containers/Navbar";
+
+
 import Footer from "../components/Footer";
+import CarouselContact from "../components/CarouselContact";
+
 
 // import './ContactUs.css';
 
@@ -48,6 +52,13 @@ class Contact extends React.Component {
         <Navbar></Navbar>
 
         <Container className="bg-container contact">
+          <Row>
+            <Col>
+            </Col>
+          </Row>
+          <CarouselContact>
+                <h1>Contact Us</h1>
+              </CarouselContact>
           <Row>
             <Col>
               <h5 className="title-left">Contact Us</h5>

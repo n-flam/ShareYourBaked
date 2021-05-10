@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Navbar from "../containers/Navbar";
-import Carousel from "../components/CarouselAbout";
+import CarouselAbout from "../components/CarouselAbout";
 import Footer from "../components/Footer";
 
 export default function AboutPage() {
@@ -18,9 +18,9 @@ export default function AboutPage() {
         <div style={{ opacity: 1 }}>
           <Row>
             <Col>
-              <Carousel>
+              <CarouselAbout>
                 <h1>About</h1>
-              </Carousel>
+              </CarouselAbout>
             </Col>
           </Row>
           <Row>
