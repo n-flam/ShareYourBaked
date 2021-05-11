@@ -14,7 +14,7 @@ export default function Avatar(props) {
     <div>
       <Row>
         <Col xs={12} sm={5} md={3}>
-          <Image
+          <Image className="pictures"
             width={75}
             height={75}
             src={props.user.imageUrl || avatar}
