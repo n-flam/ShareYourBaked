@@ -7,7 +7,7 @@ export default function () {
   return (
     <div>
       <Carousel fade>
-        <Carousel.Item>
+        <Carousel.Item className="">
           <img
             className="d-block w-100 carousel-style-picture"
             src={require('../img/bakedgoods/lecoquin-foods-74u78crHyeI-unsplash.jpg')}

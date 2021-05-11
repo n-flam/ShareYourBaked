@@ -36,6 +36,7 @@ export default function RecipeListItem(props) {
             </Col>
             <Col xs={12} sm={6} md={6}>
             <p>Phonenumber: {props.good.User.phoneNumber}</p>
+            <p>Postcode: {props.good.User.postCode}</p>
             </Col>
             <Col></Col>
           </Row>
