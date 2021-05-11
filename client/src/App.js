@@ -17,7 +17,7 @@ import './css/components-general.css';
 // import * as serviceWorker from './serviceWorker';
 
 //import components
-import {Shift} from 'ambient-cbg';
+// import {Shift} from 'ambient-cbg';
 
 //import pages
 // import Navbar from './containers/Navbar.js';
@@ -32,7 +32,7 @@ import About from "./pages/AboutPage";
 function App() {
   return (
     <div>
-       <Shift/>
+       {/* <Shift/> */}
           <BrowserRouter>
       <Switch>
         <Route exact path="/login">

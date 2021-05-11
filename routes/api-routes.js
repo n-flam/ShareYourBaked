@@ -42,13 +42,14 @@ module.exports = function (app) {
   });
 
   app.get("/api/userDetail", (req, res) => {
-    console.log("bla" + req.user.id)
+    // console.log("bla" + req.user.id)
     db.User.findByPk(req.user.id)
     .then(data => {
       data.password = undefined;
       res.json(data);
     });
   });
+
 
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {

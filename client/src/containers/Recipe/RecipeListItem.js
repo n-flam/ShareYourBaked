@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Col, Row } from "react-bootstrap";
 import RecipeAvatar from "../../components/RecipeAvatar";
 import Collapse from 'react-bootstrap/Collapse'
@@ -8,12 +8,12 @@ const avatar = "https://i.pravatar.cc/75";
 
 export default function RecipeListItem(props) {
   const [open, setOpen] = useState(false);
-
+ console.log(props)
   return (
     <div className="recipe-list-item" onClick={() => setOpen(!open)}>
       <Row>
         <Col xs={12} sm={5} md={3}>
-        <RecipeAvatar/>
+        <RecipeAvatar good={props.good}/>
 
           {/* <Avatar user={props.good.User}></Avatar> */}
         </Col>
@@ -27,13 +27,15 @@ export default function RecipeListItem(props) {
       <Collapse in={open}>
         <div id="example-collapse-text">
           <Row>
-            <Col>
-            <RecipeCard></RecipeCard>
+            <Col xs={12} sm={6} md={6}>
             <p>Ingredience: {props.good.ingredience}</p>
             <p>Pieces: {props.good.pieces}</p>
-            <p>Phonenumber: {props.good.phonenumber}</p>
+            <p>Phonenumber: {props.good.User.phoneNumber}</p>
+            <p>Contact Name: {props.good.User.name}</p>
+
             {/* <p>Contact:{props.user.phonenumber}</p> */}
             </Col>
+            <Col></Col>
           </Row>
         </div>
       </Collapse>

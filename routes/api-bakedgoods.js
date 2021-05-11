@@ -6,9 +6,14 @@ module.exports = function (app) {
   // Otherwise the user will be sent an error
   app.get("/api/bakedgoods", (req, res) => {
     db.Bakedgood.findAll({
-      include: db.User
+      include: db.User,
     })
+      .then((dbResp) => {
+        db.User.findAll();
+        return dbResp;
+      })
       .then((dbResponse) => {
+        dbResponse.password = undefined;
         res.json(dbResponse);
       })
       .catch((err) => {
@@ -17,3 +22,17 @@ module.exports = function (app) {
       });
   });
 };
+
+// app.get("/api/bakedgoods", (req, res) => {
+//   db.Bakedgood.findAll({
+//     include: db.User
+//   })
+//     .then((dbResponse) => {
+//       res.json(dbResponse);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(401).json(err);
+//     });
+// });
+// };

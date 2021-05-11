@@ -15,10 +15,10 @@ export default function RecipeAvatar(props) {
       <Row>
         <Col xs={12} sm={5} md={3}>
           <Image
-            width={100}
-            height={100}
-            src={recipeavatar}
-            // src={props.good.imgurl || recipeavatar}
+            width={150}
+            height={150}
+            // src={recipeavatar}
+            src={props.good.imgurl || recipeavatar}
             // roundedCircle
           />
         </Col>
