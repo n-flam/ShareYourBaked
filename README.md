@@ -9,8 +9,8 @@
     <img src="https://img.shields.io/badge/-GitHub-lightgrey" />
     <img src="https://img.shields.io/badge/-React-lightgrey" />
     <img src="https://img.shields.io/badge/-CSS-lightgrey" />
-    <img src="https://img.shields.io/badge/-React-Bootstrap-lightgrey" />
-    <img src="https://img.shields.io/badge/-Visual-Studio-Code-lightgrey" />
+    <img src="https://img.shields.io/badge/-ReactBootstrap-lightgrey" />
+    <img src="https://img.shields.io/badge/-VisualStudioCode-lightgrey" />
     <img src="https://img.shields.io/badge/-Sequelize-lightgrey" />
     <img src="https://img.shields.io/badge/-EmailJS-lightgrey" />
     <img src="https://img.shields.io/badge/-Cloudinary-lightgrey" />
@@ -29,4 +29,4 @@ https://shareyourbaked.herokuapp.com/login
 
 
 # mockup
-![Alt text](https://github.com/n-flam/HomemadeBurger/blob/main/assets/screenshot.jpg)
+![Alt text](https://github.com/n-flam/ShareYourBaked/blob/master/mockup/React%20Reading%20Li%20(2).png)
