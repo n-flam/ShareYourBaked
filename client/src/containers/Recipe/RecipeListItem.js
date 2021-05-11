@@ -24,16 +24,18 @@ export default function RecipeListItem(props) {
           <p>{props.good.description}</p>
         </Col>
       </Row>
-      <Collapse in={open}>
+      <Collapse in={open} className="collapse-style">
         <div id="example-collapse-text">
+          <Row>
+            <Col xs={12} sm={12} md={12}><h4>Contact Name: {props.good.User.name}</h4></Col>
+          </Row>
           <Row>
             <Col xs={12} sm={6} md={6}>
             <p>Ingredience: {props.good.ingredience}</p>
             <p>Pieces: {props.good.pieces}</p>
+            </Col>
+            <Col xs={12} sm={6} md={6}>
             <p>Phonenumber: {props.good.User.phoneNumber}</p>
-            <p>Contact Name: {props.good.User.name}</p>
-
-            {/* <p>Contact:{props.user.phonenumber}</p> */}
             </Col>
             <Col></Col>
           </Row>

@@ -48,7 +48,6 @@ export default function UserPage() {
           </Row>
           <Row>
             <Col>
-            <RecipeCard></RecipeCard>
             </Col>
           </Row>
           

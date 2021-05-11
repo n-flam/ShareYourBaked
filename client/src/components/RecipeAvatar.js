@@ -14,7 +14,7 @@ export default function RecipeAvatar(props) {
     <div>
       <Row>
         <Col xs={12} sm={5} md={3}>
-          <Image
+          <Image className="recipe-picture"
             width={150}
             height={150}
             // src={recipeavatar}
